@@ -1,0 +1,84 @@
+S<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASS SELECTION</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #1c788c;
+        }
+
+        h1 {
+            color: #ffffff;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .part {
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background-color: #fff;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .part:hover {
+            transform: scale(1.05);
+        }
+
+        .part i {
+            font-size: 48px;
+            color: #ff6600; /* Orange */
+        }
+
+        .part p {
+            font-size: 20px;
+            margin-top: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>PROVIDE US YOUR CLASS</h1>
+    <div class="container">
+        <div class="part" onclick="openLink('CLASS 9TH.HTML')">
+            <IMG SRC="9TH LOGO.png"ALT="CLASS">
+            <p>IX</p>
+        </div>
+        <div class="part" onclick="openLink('CLASS 10TH.html')">
+            <IMG SRC="10TH LOGO.jpg"ALT="CLASS">
+            <p>X</p>
+        </div>
+        <div class="part" onclick="openLink('CLASS 11TH.html')">
+            <IMG SRC="11TH LOGO.png"ALT="CLASS">
+            <p>XI</p>
+        </div>
+        <div class="part" onclick="openLink('CLASS 12TH.PNG')">
+            <IMG SRC="12TH.png"ALT="CLASS">
+             <p>XII</p>
+        </div>
+        <div class="part" onclick="openLink('CLASS 13TH.html')">
+            <IMG SRC="13TH.png"ALT="CLASS">
+            <p>XIII</p>
+        </div>
+    </div>
+
+    <script>
+        function openLink(link) {
+            window.location.href = link;
+        }
+    </script>
+</body>
+</html>

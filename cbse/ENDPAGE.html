@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOPIC SELECTION</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color:#1C788C;
+        }
+
+        h1 {
+            color: #ffffff;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .part {
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background-color: #fff;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .part:hover {
+            transform: scale(1.05);
+        }
+
+        .part p {
+            font-size: 20px;
+            margin-top: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1><B>Lets Fly Together</B></h1>
+    <div class="container">
+        <div class="part" onclick="openLink('BOKS.jpg')">
+            <img src="th.jpg"alt="BOKS">
+            <p>Books</p>
+        </div>
+        <div class="part" onclick="openLink('short_notes.html')">
+            <img src="shortnotes.jpg"alt="notes">
+            <p>Short Notes</p>
+        </div>
+        <div class="part" onclick="openLink('lecture.html')">
+            <img src="lecture.jpg"alt="lecture">
+            <p>Lecture</p>
+        </div>
+        <div class="part" onclick="openLink('practice_questions.html')">
+            <img src="question.jpg"alt="practice question">
+            <p>Practice Questions</p>
+        </div>
+    </div>
+
+    <script>
+        function openLink(link) {
+            window.location.href = link;
+        }
+    </script>
+</body>
+</html>
